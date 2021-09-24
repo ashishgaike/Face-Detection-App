@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camara_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/detect_button">
+    </com.wonderkiln.camerakit.CameraView>
+
+    <com.ashishgaike.facedetectionapp.Helper.GraphicOverlay
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/graphic_overlay"
+        android:layout_above="@+id/detect_button">
+
+    </com.ashishgaike.facedetectionapp.Helper.GraphicOverlay>
+
+    <Button
+        android:id="@+id/detect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detect_face"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
